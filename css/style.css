@@ -264,3 +264,27 @@ color: var(--teal-dark);
     background-color: var(--beige);
     transform: rotate(90deg) translate(16px,3px);
 }
+
+
+/* buttons */
+
+.button{
+    display: inline-block;
+    background-color: var(--teal-light);
+    color: var(--dark-green);
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    font-weight: var(--font-medium);
+    transition: .4s;
+}
+
+.button:hover{
+    background-color: var(--teal-dark);
+}
+
+.button--ghost{
+    background: transparent;
+    border: 2px solid var(--teal-dark);
+    color: var(--dark-green);
+}
+
