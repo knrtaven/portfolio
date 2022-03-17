@@ -10,8 +10,8 @@
 
 --beige: rgb(229, 227, 201);
 --teal-light: rgb(180, 207, 176);
---teal-dark: rgb(148, 180, 159);
---dark-green: rgb(120, 147, 149);
+--teal-dark: rgb(131, 163, 142);
+--dark-green: rgb(106, 129, 131);
 
 /* font and typography */
 --body-font: 'Oxygen', sans-serif;
@@ -68,6 +68,7 @@ textarea {
 body{
     background-color: var(--beige);
     color: var(--teal-dark);
+    transition: 4s;
 }
 
 h1,h2,h3{
@@ -115,22 +116,21 @@ img{
     padding: 4.5rem 0 1rem;
 }
 
-.section_title,
-.section_subtitle{
-font-size: var(--h2-font-size);
-color: var(--teal-dark);
+.section_title, 
+.section_subtitle {
+  text-align: center;
 }
 
 .section_title{
     font-size: var(--h2-font-size);
-    color:var(--teal-dark);
+    color:var(--dark-green);
     margin-bottom: 2rem;
 }
 
 .section_subtitle{
     display: block;
     font-size: var(--small-font-size);
-    color: var(--teal-light);
+    color: var(--teal-dark);
 }
 
 /* header and nav */
@@ -164,7 +164,7 @@ color: var(--teal-dark);
 .nav_menu{
     position: fixed;
     bottom: 1rem;
-    background-color: rgba(148, 180, 159, .8);
+    background-color: rgba(148, 180, 159, 0.8);
     width: 90%;
     border-radius: 4rem;
     padding: 1rem 2.25rem;
@@ -180,7 +180,7 @@ color: var(--teal-dark);
 .nav_link{
     color:var(--dark-green);
     font-size: 1.25rem;
-    padding: .5rem;
+    padding: 0.5rem;
     display: flex;
     border-radius: 5rem;
 }
@@ -188,7 +188,14 @@ color: var(--teal-dark);
 .active-link{
     background: linear-gradient(180deg, rgba(180, 207, 176, 1),
     rgba(180, 207, 176, .2));
-    box-shadow: 0 0 16px rgba(180, 207, 176, .4);
+    box-shadow: 0 0 16px rgba(180, 207, 176, 0.4);
+}
+
+/* change background header */
+
+.scroll-header{
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .3);
+    transition: 1s;
 }
 
 /* home */
@@ -212,7 +219,7 @@ color: var(--teal-dark);
 .home_greeting{
     display: block;
     color: var(--dark-green);
-    margin-bottom: .25rem;
+    margin-bottom: 0.25rem;
 }
 
 .home_education{
@@ -239,7 +246,7 @@ color: var(--teal-dark);
     bottom:  5rem;
     left: 0;
     display: grid;
-    row-gap: .5rem;
+    row-gap: 0.5rem;
 }
 
 .home_social-link{
@@ -250,7 +257,7 @@ color: var(--teal-dark);
     border-radius: .25rem;
     display: flex;
     font-size: 1rem;
-    transition: .4s;
+    transition: 0.4s;
 }
 
 .home_social-link:hover{
@@ -272,10 +279,10 @@ color: var(--teal-dark);
     display: inline-block;
     background-color: var(--teal-light);
     color: var(--dark-green);
-    padding: .75rem 1rem;
-    border-radius: .5rem;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
     font-weight: var(--font-medium);
-    transition: .4s;
+    transition: 0.4s;
 }
 
 .button:hover{
@@ -288,3 +295,64 @@ color: var(--teal-dark);
     color: var(--dark-green);
 }
 
+/* about */
+
+.about_container{
+    row-gap: 2.5rem;
+}
+
+.about_data{
+    text-align: center;
+}
+
+.about_info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+.about_box{
+    background-color: var(--teal-light);
+    border-radius: 0.75rem;
+    padding: 0.75rem, 0.5rem;
+}
+
+.about_title{
+    font-size:var(--small-font-size);
+}
+
+.about_subtitle{
+    font-size: var(--tiny-font-size);
+}
+
+
+.about_description{
+    margin-bottom: 2rem;
+}
+
+/* skills section */
+
+.skills_container{
+    row-gap: 2rem;
+    padding-top: 1rem;
+}
+
+.skills_content{
+    background-color: var(--teal-light);
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+}
+
+.skills_title{
+    font-size:var(--normal-font-size);
+    font-weight: var(--font-medium);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.skills_box{
+    display: flex;
+    column-gap: 2.5rem;
+    
+}
