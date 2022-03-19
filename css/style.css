@@ -656,7 +656,7 @@ body.dark-theme{
     }
 
     .project_img{
-        width: 295px;
+        max-width: 500px;
     }
 
     .contact_info{
